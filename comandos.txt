@@ -1,0 +1,22 @@
+  227  npm install font-awesome
+  228  ng version
+  229  ng g c core/logo
+  230  cd base-angular/
+  231  ng g c core/logo
+  232  ng g c core/menu
+  233  cat ng g c core/menu
+  234  history
+  235  cd ..
+  236  history 10 > comandos.txt
+  241  ng generate --help
+  242  ng g --help
+  243  ng g m core
+  244  ng g c cabeza 
+  245  ng serve
+  246  ng g c core/pie
+  247  ng serve
+  248  ng serve
+  249  history
+  250  history -h
+  251  man history
+  255  history 11 >> comandos.txt
