@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: 'about', component: AboutComponent },
   { path: 'catalogo', loadChildren: './catalogo/catalogo.module#CatalogoModule' },
+  { path: 'comunics', loadChildren: './comunics/comunics.module#ComunicsModule' },
 ];
 
 @NgModule({

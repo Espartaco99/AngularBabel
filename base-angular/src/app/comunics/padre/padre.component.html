@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+      <h4>Padre</h4>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="nombre">Mi hijo se llama</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" [(ngModel)]="nombre">
+        
+      </div>
+    <app-hijo [nombre]= "nombre" (respuesta)="respuestaHijo($event)" class="col-6"></app-hijo>
+    <div class="card-footer text-muted">
+      <p>Mi hijo se llama {{nombre}}</p>
+  
+    </div>
+  </div>
