@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { AgendaRoutingModule } from './agenda-routing.module';
 import { AgendaComponent } from './agenda.component';
+import { TareasComponent } from './tareas/tareas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    AgendaRoutingModule
+    AgendaRoutingModule,
+    FormsModule
   ],
-  declarations: [AgendaComponent],
+  declarations: [AgendaComponent, TareasComponent],
   exports: [
     AgendaComponent
   ]

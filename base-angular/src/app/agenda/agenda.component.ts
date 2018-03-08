@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-agenda',
   template: `
-    <p>
-      agenda works!
-    </p>
+    <div class="container">
+      <div class="row">
+        <app-tareas></app-tareas>
+      </div>
+    </div>
   `,
   styles: []
 })

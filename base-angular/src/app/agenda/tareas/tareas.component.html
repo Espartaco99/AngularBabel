@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">
+    <h4>Tareas</h4>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="tarea">Añade una tarea</label>
+      <input type="text" name="tarea" id="tarea" class="form-control" placeholder="" [(ngModel)]="tarea">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="addTarea()">Añadir</button>
+  </div>
+  <div class="card-footer text-muted">
+     <!--  Else if dentro de templates con variables locales, especifico angular 4 -->
+    <div *ngIf="tareas.length; then ideasTemplate else vacioTemplate"></div>
+    <ng-template #ideasTemplate>
+      <h4>Lista de Tareas</h4>
+      <ul class="list-group">
+        <!-- t es una variable local, que hace como un forEach -->
+        <li class="list-group-item" *ngFor="let t of tareas">{{t}}</li>
+      </ul>
+    </ng-template>
+    <ng-template #vacioTemplate>Animate a añadir tu primera tarea</ng-template>
+  </div>
+</div>
