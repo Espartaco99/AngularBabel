@@ -11,14 +11,13 @@
   </div>
   <div class="card-footer text-muted">
      <!--  Else if dentro de templates con variables locales, especifico angular 4 -->
-    <div *ngIf="tareas.length; then ideasTemplate else vacioTemplate"></div>
-    <ng-template #ideasTemplate>
+    <div *ngIf="tareas.length; else vacioTemplate">
       <h4>Lista de Tareas</h4>
       <ul class="list-group">
         <!-- t es una variable local, que hace como un forEach -->
         <li class="list-group-item" *ngFor="let t of tareas">{{t}}</li>
       </ul>
-    </ng-template>
+    </div>
     <ng-template #vacioTemplate>Animate a añadir tu primera tarea</ng-template>
   </div>
 </div>
