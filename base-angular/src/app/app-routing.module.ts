@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'comunics', loadChildren: './comunics/comunics.module#ComunicsModule' },
   { path: 'agenda', loadChildren: './agenda/agenda.module#AgendaModule' },
   { path: 'printer', loadChildren: './printer/printer.module#PrinterModule' },
+  { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
 ];
 
 @NgModule({

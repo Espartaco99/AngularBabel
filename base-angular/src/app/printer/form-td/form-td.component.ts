@@ -12,7 +12,7 @@ export class FormTdComponent implements OnInit {
   listaPrinters: Printer[];
   listaDepartamentos: Departamentos[];
   orderPrint: OrderPrintIf;
-  @ViewChild('form') formulario: ElementRef;
+  @ViewChild('form') formulario: any;
   constructor() { }
 
   ngOnInit() {
@@ -29,12 +29,13 @@ export class FormTdComponent implements OnInit {
     console.dir(this.formulario);
   }
   borrar() {
-    this.orderPrint = {
+    this.formulario.reset();
+    /* this.orderPrint = {
       user: {nombre: '', apellidos: '', telefono: ''},
       printer: {id: '', name: ''},
       isColor: false,
       isClaro: false,
       departamento: {id: '', name: ''}
-    };
+    }; */
   }
 }
