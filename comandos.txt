@@ -20,3 +20,4 @@
   250  history -h
   251  man history
   255  history 11 >> comandos.txt
+ng new practica-bbl -p bbl --routing true
